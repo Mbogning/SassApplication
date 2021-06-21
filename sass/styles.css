@@ -46,6 +46,35 @@ td, th {
 }
 
 body {
+  background: #dd4848;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  border: 1px solid #ccc;
+}
+
+.table thead {
   background: #000;
+  color: #fff;
+}
+
+.table thead th {
+  background: #000;
+}
+
+.btn {
+  background: #913a3a;
+}
+
+.btn:hover {
+  background: #2cc038;
+}
+
+.theme-vert .btn {
+  background: green;
 }
 /*# sourceMappingURL=styles.css.map */
