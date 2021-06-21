@@ -1,0 +1,5 @@
+$medium: 768px!default;
+$large: 1000px!default;
+
+$medium-up: "only screen and (min-witdh: #{$medium})"; 
+$medium-down: "only screen and (max-witdh: #{$large})";  

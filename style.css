@@ -64,17 +64,17 @@ body {
   background: #000;
 }
 
-.btn, .call-to-action, .card-action, .btn-danger, .card-cancel {
+.btn, .card-action, .btn-danger, .card-cancel {
   border-radius: 3px;
   padding: 5px 12px;
 }
 
-.btn, .call-to-action, .card-action, .btn-danger, .card-cancel {
+.btn, .card-action, .btn-danger, .card-cancel {
   text-decoration: none;
-  background: #e8ec1e;
+  background: green;
   color: #FFF;
 }
-.btn:hover, .call-to-action:hover, .card-action:hover, .btn-danger:hover, .card-cancel:hover {
+.btn:hover, .card-action:hover, .btn-danger:hover, .card-cancel:hover {
   background: #ccc;
 }
 
@@ -92,6 +92,16 @@ body {
 
 .card {
   padding: 10px;
+}
+
+@media only screen and (max-witdh: 1000px) {
+  .card-actions {
+    display: block;
+  }
+
+  .btn, .btn-danger, .card-action, .card-cancel {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
