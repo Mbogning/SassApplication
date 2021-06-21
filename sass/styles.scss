@@ -1,4 +1,8 @@
 @import "libs/reset.scss";
+@import "libs/responsive.scss";
+
+$primary: green; 
+
 body{
     padding: 10px;
     background: #FFF;
@@ -30,7 +34,7 @@ body{
 .btn {
     @extend %btn;
     text-decoration: none;
-    background: rgb(232, 236, 30);
+    background: $primary;
     color: #FFF;
     
     &:hover {
@@ -62,8 +66,13 @@ body{
 .card {
     padding: 10px;
 }
-
-.call-to-action {
-    @extend .btn;
+ 
+@media #{$medium-down} {
+    .card-actions {
+        display: block;
+    }
+    .btn {
+        width: 100%;
+    }
 }
 
