@@ -1,6 +1,9 @@
 @import "libs/reset.scss";
 body{
-    background: rgb(221, 72, 72);
+    padding: 10px;
+    background: #FFF;
+    font-family: sans-serif;
+    border-radius: 3px;
 }
 
 .table {
@@ -20,15 +23,47 @@ body{
     }
 
 }
-
+%btn {
+    border-radius: 3px;
+    padding: 5px 12px;
+}
 .btn {
-    background: rgb(145, 58, 58);
-
+    @extend %btn;
+    text-decoration: none;
+    background: rgb(232, 236, 30);
+    color: #FFF;
+    
     &:hover {
-        background: rgb(44, 192, 56);
-    }
-
-    .theme-vert & {
-        background: green;
+        background: #ccc;
     }
 }
+.btn-danger {
+    @extend .btn;
+
+    background: rgb(0, 38, 255);
+    &:hover {
+        background: rgb(218, 26, 186)
+    }
+}
+
+.card-action {
+    @extend .btn ;
+}
+
+.card-cancel {
+    @extend .btn-danger;
+}
+
+.card-actions {
+    display: flex;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    padding: 10px;
+}
+
+.call-to-action {
+    @extend .btn;
+}
+
